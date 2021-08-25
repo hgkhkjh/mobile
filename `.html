@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="layui (1)/layui-v2.5.6/layui/css/layui.css">
+    <link rel="stylesheet" href="yidong.css">
+</head>
+<body>
+    <!-- 页头 -->
+    <!-- <button class="open">打开app</button> -->
+   <div style="display: flex; justify-content: center; background-color: rgb(28, 151, 141);width: 100%; height: 0.8rem;padding-top: 0.2rem;padding-bottom: 0.1rem ; z-index: 1000;"><div style="display:inline-block; font-size: 0.4rem;"><p class="sun" style="font-size: 0.55rem;">🔆</p> 
+</div>
+<input type="text"  class='osearch' placeholder="search" > <input type="submit" value="🔍" class="searr">
+</div>
+    <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> -->
+        <!-- 轮播图部分 -->
+       <div class="lunbo" >
+          <ul class="lul"> 
+            
+            <li>
+                <a href="">
+                    <img src="img/1.png" alt="">
+                </a>
+            </li>
+            <li >
+                <a href="">
+                    <img src="img/2.png" alt="">
+                </a>
+            </li>
+            <li >
+                <a href="">
+                    <img src="img/3.png" alt="">
+                </a>
+            </li>           
+          </ul>
+       </div>
+      <ul class='ul'>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+      </ul>
+      <ul class="layui-timeline">
+        <li class="layui-timeline-item">
+          <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+          <div class="layui-timeline-content layui-text">
+            <h3 class="layui-timeline-title">8月18日</h3>
+            <p>
+              layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+              <br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+              <br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+            </p>
+          </div>
+        </li>
+        <li class="layui-timeline-item">
+          <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+          <div class="layui-timeline-content layui-text">
+            <h3 class="layui-timeline-title">8月16日</h3>
+            <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
+            <ul>
+              <li>《登高》</li>
+              <li>《茅屋为秋风所破歌》</li>
+            </ul>
+          </div>
+        </li>
+        <li class="layui-timeline-item">
+          <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+          <div class="layui-timeline-content layui-text">
+            <h3 class="layui-timeline-title">8月15日</h3>
+            <p>
+              中国人民抗日战争胜利72周年
+              <br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+              <br>铭记、感恩
+              <br>所有为中华民族浴血奋战的英雄将士
+              <br>永垂不朽
+            </p>
+          </div>
+        </li>
+        <li class="layui-timeline-item">
+          <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+          <div class="layui-timeline-content layui-text">
+            <div class="layui-timeline-title">过去</div>
+          </div>
+        </li>
+      </ul>
+  
+      <form class="layui-form" action="">
+        <div class="layui-form-item">
+          <label class="layui-form-label">输入框</label>
+          <div class="layui-input-block">
+            <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">密码框</label>
+          <div class="layui-input-inline">
+            <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+          </div>
+          <div class="layui-form-mid layui-word-aux">辅助文字</div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">选择框</label>
+          <div class="layui-input-block">
+            <select name="city" lay-verify="required">
+              <option value=""></option>
+              <option value="0">北京</option>
+              <option value="1">上海</option>
+              <option value="2">广州</option>
+              <option value="3">深圳</option>
+              <option value="4">杭州</option>
+            </select>
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">复选框</label>
+          <div class="layui-input-block">
+            <input type="checkbox" name="like[write]" title="写作">
+            <input type="checkbox" name="like[read]" title="阅读" checked>
+            <input type="checkbox" name="like[dai]" title="发呆">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">开关</label>
+          <div class="layui-input-block">
+            <input type="checkbox" name="switch" lay-skin="switch">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">单选框</label>
+          <div class="layui-input-block">
+            <input type="radio" name="sex" value="男" title="男">
+            <input type="radio" name="sex" value="女" title="女" checked>
+          </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">文本域</label>
+          <div class="layui-input-block">
+            <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+          </div>
+        </div>
+      </form>   
+</body>
+</html>
+<script src="rem.js"></script>
+<script>
+    //设置动态的css样式
+    
+    var lunbo =document.querySelector('.lunbo') 
+    var lul=document.querySelector('.lul')
+  var fimg =document.querySelectorAll('li')[0];
+  var limg =document.querySelectorAll('li')[2];
+//   cloneNode复制一个元素
+// appendChild() 方法可向节点的子节点列表的末尾添加新的子节点，再最后一张图片后面添加第一张图片
+  lul.appendChild(fimg.cloneNode(true))
+//在第一张图片前面添加最后一张图片  
+lul.insertBefore(limg.cloneNode(true),lul.firstChild)
+// 获取lul下面全部的li
+  var lis= lul.querySelectorAll('li')
+  
+//   获取li元素的数量
+var licount = lis.length;
+// 获取轮播图总共的宽度
+var lwidth = lunbo.offsetWidth;
+// 设置图片盒子的宽度
+lul.style.width=licount*lwidth+'px';
+//设置每一个li元素的样式 给他们定义宽度 他的宽度就等于我们页面的宽度也就是lunbo的宽度
+for(i=0;i<lis.length;i++){
+    lis[i].style.width=lwidth+'px'
+}
+//设置偏移距离
+lul.style.left=-lwidth+'px'
+
+// 设置自动轮播
+// 设置索引(设置索引为1，因为图片已经偏移了)
+var index=1
+// 设置定时器先去封装他，因为后面要开启定时器，调用这个函数就行了
+var time;//要在外面定义time不然后面清除定时器接收不到函数
+//当手指滑动轮播图过快的时候后面的轮播图就不会显示，因为滑动过快时过度没有完成就不会触发webkitTransitionEnd（监听当元素执行完过度效果）
+//所以设置一个变量用来控制，（过度效果未完成不能滑动图片）
+var con=true
+ var ltime=function(){
+  time=setInterval(function(){
+index++
+// 设置偏移 每次偏移都是以最初的点为参照点点的，所以如果每次都便宜一个width的话图片就不动
+lul.style.left=(-index*lwidth)+'px'
+
+// 添加过度效果,在最后一张跳到第一张时要清除过度效果所以要加上如果在清除过度后面添加else{ lul.style.transition='all 1s'}的话因为有个定时器所以不能流畅执行
+lul.style.transition='all 1s'
+
+setTimeout(function(){
+ // 判断是否到最后一张
+// 当显示为最后一幢图片时进行操作，最后一张图片的索引值为licount-1
+if(index==licount-1){
+  index=1;
+// 偏移到最开始的位置
+lul.style.left=(-index*lwidth)+'px'
+//当显示最后一张的时候会移回去，所以要清除过度效果
+lul.style.transition='none'}
+//如果直接清除过度效果的话最后一张就直接跳过去了，所以让他延迟一会在进行判断（跳转），这就是为什么在最后一张后面要添加第一张图片了   
+
+
+
+},1000)
+
+},2000)
+ }
+ltime();
+//设置触摸事件
+// 定义手指的坐标 分为x和y
+var sx,sy,mx,my,dis;
+lul.addEventListener('touchstart',function(q){
+    clearInterval(time);
+    sx=q.targetTouches[0].clientX;
+})
+
+lul.addEventListener('touchmove',function(q){
+    if(con==true){
+          mx=q.targetTouches[0].clientX;
+     dis=mx-sx;
+     lul.style.left=-index*lwidth+dis+'px'
+    //  为了使过度效果流畅  去除lul的过渡效果
+    lul.style.transition='none'
+    }
+  
+})
+lul.addEventListener('touchend',function(){
+    con=false;
+    // 判断是否切换图片
+    if(Math.abs(dis)>100){//切换图片 如果手指触摸滑动的距离超过100进行图片切换
+        if(dis>0){//如果偏移值为正数则向下一张偏移（向右滑动）
+     index--
+    }
+    else{//如果偏移值为负数则向下一张偏移（向左滑动）
+     index++
+    }
+    //设置轮播图的最终偏移，添加过度
+    lul.style.left=-index*lwidth+'px';
+    lul.style.transition='all 0.5s'
+    }
+    else if(Math.abs(dis)>0 ){//确定用户做出拖拽事件，点一下的话不需要做出相关操作
+      //设置轮播图回弹，添加过度效果
+      lul.style.left=-index*lwidth+'px';
+    lul.style.transition='all 0.5s'
+    }
+//执行完触摸事件就可以从新开启定时器了
+sx=0;
+mx=0;
+dis=0;
+ltime()
+
+})
+//解决轮播图划到第一张或者最后一张时没有图片
+//添加 webkitTransitionEnd 事件，webkitTransitionEnd事件是监听当元素执行完过度效果
+
+ lul.addEventListener('webkitTransitionEnd',function(){
+con=true
+
+if(index==licount-1){//当滑动到最后一个图片时展示的是倒数第二张图片让图片展示的为第一张
+    index=1;//index时从0开始的
+    lul.style.left=-index*lwidth+'px';
+    lul.style.transition='none'
+  
+}
+else if(index==0){//当展示的时最后一张图片时，就是第一个位置的图片向前滑动时让他展示最后一张图片
+    index=licount-2;
+    lul.style.left=-index*lwidth+'px';
+    lul.style.transition='none'  
+}
+ })
+ var sun=document.querySelector('.sun')
+ var ul=document.querySelector('.ul')
+ sun.addEventListener('mouseover',function(){
+  ul.style.display='block'
+
+   })
+   sun.addEventListener('mouseleave',function(){
+  ul.style.display='none'
+
+   })
+    // 下滑隐藏打开app
+ var open=document.querySelector('.open')
+  window.onscroll=function(){
+    if(document.documentElement.scrollTop>=50){
+     open.style.display='none'
+    }
+   
+  }
+  //Demo
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+</script>
+<script src="layui (1)/layui-v2.5.6/layui/layui.all.js"></script>

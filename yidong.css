@@ -1,0 +1,99 @@
+
+ *{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+.open{
+  width: 100%;
+  height: 50px;
+  background-color:dimgrey;
+ color: seashell;
+ font-size: 20px;
+ display: block;
+ z-index: 100;
+position:  fixed;
+}
+input{
+  outline:none;
+}
+a{
+  -webkit-top-heightlight-color:transparent;
+}
+
+.sun:hover{
+transform: rotate(360deg);
+transition: all 1s;
+}
+
+
+.lunbo{
+    position: relative;
+    /* 窗口页面的大小 */
+    width: 100%;
+    overflow: hidden; 
+}
+img{
+   display: block; 
+  width: 100%;
+   height: 3rem;
+  
+
+}
+
+.lul{
+    /* 让ul有足够的大小，不然就会被挤到下面去 */
+    width: 500%;
+    list-style: none; 
+   position: relative;
+   /* left: -100%; */
+   transition: all 1s;
+}
+.lul>li{
+
+  float: left; 
+  width: 20%;  
+}
+.osearch{
+  width: 80%;
+  border-radius: 1rem;
+  font-size: 0.4rem;color: rgb(81, 82, 81);
+  display: inline-block;
+  padding: 0.3rem;
+
+
+}
+.searr{
+margin-right: -0.3rem;
+height: 0.55rem;
+font-size: 0.4rem;
+/* border-top-right-radius:100%;
+border-bottom-right-radius:100%; */
+border: none;
+border-left: 1px solid gray;
+background-color:transparent;
+ position: relative;
+/* right: 0.715rem; */
+right: 0.9rem;
+top: 0.1rem; 
+padding-left: 0.1rem;
+
+}
+.ul{
+  list-style: none;
+  font-size:0.4rem ;
+border-radius: 0.5rem;
+border: 1px solid black;
+background-color: beige;
+width: 25%;
+padding: 0.3rem;
+opacity: 0.8;
+position: relative;
+top: -3rem;
+display: none;
+margin-bottom: -2.5rem;
+padding-bottom: -2.5rem;
+}
